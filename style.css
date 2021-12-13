@@ -674,10 +674,10 @@ html {
         display: none;
     }
     .form-desk {
-        display: block;
-        height: 50vh;
-        width: 1000px;
-        padding-top: 100px;
+        display: grid;
+        height: 45vh;
+        width: 100vw;
+        grid-template-columns: auto auto;
     }
     .footer {
         display: none;
@@ -708,19 +708,18 @@ html {
         text-align: center;
     }
     .title-form {
-        position: absolute;
-        margin-left: 330px;
+        grid-column: 1;
+        margin-top: 90px;
     }
     .sendform {
         position: absolute;
         width: 500px;
-        margin-left: 800px;
-        margin-top: 35px;
+        margin-top: 60px;
+        grid-column: 2;
     }
     .text-form {
-        position: absolute;
-        margin-left: 300px;
-        margin-top: 140px;
+        grid-column: 1;
+        margin-bottom: 320px;
     }
     .btn-submit {
         position: absolute;
