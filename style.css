@@ -482,7 +482,7 @@ html {
         z-index: 999;
     }
     .local-desk {
-        height: 100vh;
+        height: 110vh;
         background-color: #77AAA1;
     }
     .titulo-wrap-desk {
@@ -505,7 +505,7 @@ html {
         justify-content: center;
         align-items: flex-end;
         grid-row: 2;
-        margin-left: 450px;
+        margin-left: 500px;
     }
     .local_icon-desk img {
         animation: mechendo .5s ease-in-out alternate infinite, girando 1.5s ease alternate infinite;
@@ -918,12 +918,22 @@ html {
     }
 }
 
+.texto-footer-mobile {
+    display: none;
+}
+
 @media screen and (min-width:958px) {
+    .texto-footer {
+        display: none;
+    }
+    .texto-footer-mobile {
+        display: block;
+    }
     .form {
         height: 100vh;
     }
     .input {
-        width: 900px;
+        width: 1000px;
     }
 }
 
