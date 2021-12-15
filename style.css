@@ -725,6 +725,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    position: fixed;
     box-shadow: 0 0px 5px black;
 }
 
@@ -1101,9 +1102,6 @@ html {
     .container {
         display: block;
     }
-    .input {
-        width: 500px;
-    }
     .row {
         display: flex;
         justify-content: center;
@@ -1200,6 +1198,12 @@ html {
 @media screen and (min-width:1360px) {
     .input {
         width: 1300px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .input {
+        width: 500px;
     }
 }
 

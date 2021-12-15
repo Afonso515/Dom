@@ -85,7 +85,7 @@ p {
 
 @media screen and (min-width:1024px) {
     .vetor {
-        width: 60%;
+        width: auto
     }
 }
 
