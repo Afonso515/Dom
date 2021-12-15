@@ -846,6 +846,9 @@ html {
 }
 
 @media screen and (max-height: 440px) {
+    .parallax {
+        display: block;
+    }
     .footer {
         margin-top: 200px;
     }
@@ -855,6 +858,9 @@ html {
 }
 
 @media screen and (min-width:375px) {
+    .parallax {
+        display: none;
+    }
     .local {
         height: 80vh;
     }
