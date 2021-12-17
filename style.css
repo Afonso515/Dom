@@ -257,15 +257,17 @@ html {
         width: 30px;
     }
     .button_cadastra-desk {
+        display: block;
         width: 320px;
         border: 1px solid white;
+        padding-top: 15px;
         height: 50px;
         background-color: white;
         font-size: 14px;
         font-weight: bolder;
         letter-spacing: 0.5em;
         text-transform: uppercase;
-        margin-left: 560px;
+        margin-left: 600px;
         font-family: poppins-bold;
         animation: fade-in 3s ease-in-out;
         box-shadow: 0 0 5px rgba(252, 252, 252, 0.705);
@@ -276,13 +278,32 @@ html {
         background-color: transparent;
         transition: all 0.5s;
     }
-    .button_cadastra-desk a {
+    .button_cadastra-desk {
         color: #009FE3;
         transition: all 0.5s;
     }
-    .button_cadastra-desk:hover a {
+    .button_cadastra-desk:hover {
         color: #ffffff;
         transition: all 0.5s;
+    }
+}
+
+@media screen and (min-width:1020px) {
+    .button_cadastra-desk {
+        margin-left: 650px;
+    }
+    .titulo-desk {
+        padding-top: 15px;
+        margin-left: 515px;
+    }
+    .metragem-desk {
+        margin-left: 570px;
+    }
+    .suites-desk {
+        margin-left: 540px;
+    }
+    .vagas-desk {
+        margin-left: 580px;
     }
 }
 
@@ -360,7 +381,7 @@ html {
         letter-spacing: 0.5em;
         text-transform: uppercase;
         border: none;
-        margin-left: 670px;
+        margin-left: 900px;
         font-family: poppins-bold;
         animation: fade-in 3s ease-in-out;
         box-shadow: 0 0 5px rgba(252, 252, 252, 0.705);
@@ -386,9 +407,6 @@ html {
     }
     .vagas-desk {
         margin-left: 795px;
-    }
-    .button_cadastra-desk {
-        margin-left: 800px;
     }
 }
 
@@ -482,7 +500,7 @@ html {
         z-index: 999;
     }
     .local-desk {
-        height: 110vh;
+        height: 80vh;
         background-color: #77AAA1;
     }
     .titulo-wrap-desk {
@@ -505,7 +523,7 @@ html {
         justify-content: center;
         align-items: flex-end;
         grid-row: 2;
-        margin-left: 500px;
+        margin-left: 450px;
     }
     .local_icon-desk img {
         animation: mechendo .5s ease-in-out alternate infinite, girando 1.5s ease alternate infinite;
@@ -523,12 +541,18 @@ html {
         letter-spacing: 0.25em;
         text-transform: uppercase;
         animation: fade-in-rigth-desk 2s ease-in-out;
+    }
+}
+
+@media screen and (min-width:1020px) {
+    .local_icon-desk {
+        margin-left: 500px;
     }
 }
 
 @media screen and (min-width:1280px) {
     .local_icon-desk {
-        margin-left: 600px;
+        margin-left: 620px;
     }
 }
 
@@ -633,7 +657,7 @@ html {
         justify-content: center;
         align-items: flex-end;
         grid-row: 2;
-        margin-left: 690px;
+        margin-left: 670px;
     }
     .local_icon-desk img {
         animation: mechendo .5s ease-in-out alternate infinite, girando 1.5s ease alternate infinite;
@@ -659,16 +683,16 @@ html {
         margin-left: 920px;
     }
     .local-desk {
-        height: 82vh;
+        height: 85vh;
+    }
+    .button_cadastra-desk {
+        margin-left: 1125px;
     }
 }
 
 @media screen and (min-width:1920px) {
-    .local-desk {
-        height: 83vh;
-    }
     .local_icon-desk {
-        margin-left: 930px;
+        margin-left: 910px;
         margin-top: -10px;
     }
 }
@@ -862,7 +886,7 @@ html {
         display: none;
     }
     .local {
-        height: 80vh;
+        height: 100vh;
     }
     .titulo-wrap {
         align-items: center;
@@ -889,19 +913,19 @@ html {
 
 @media screen and (min-width:411px) {
     .local {
-        height: 70vh;
+        height: 100vh;
     }
 }
 
 @media screen and (min-width:414px) {
     .local {
-        height: 70vh;
+        height: 100vh;
     }
 }
 
 @media screen and (min-width:540px) {
     .local {
-        height: 80vh;
+        height: 100vh;
     }
     .form {
         height: 120vh;
@@ -927,6 +951,14 @@ html {
     display: none;
 }
 
+.footer-desk {
+    display: none;
+}
+
+.form-desk {
+    display: none;
+}
+
 @media screen and (min-width:958px) {
     .texto-footer {
         display: none;
@@ -938,7 +970,73 @@ html {
         height: 100vh;
     }
     .input {
-        width: 1000px;
+        width: 900px;
+    }
+    .footer {
+        display: none;
+    }
+    .footer-desk {
+        display: block;
+    }
+    .footer-desk {
+        display: grid;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        padding-top: 10px;
+        width: 100vw;
+        height: 35vh;
+        background: #F5F5F5;
+        /* display: flex; */
+        align-items: flex-start;
+    }
+    .footer-desk img {
+        padding-top: 15px;
+        width: 500px;
+        justify-self: center;
+    }
+    .footer-desk p {
+        font-family: poppins;
+        padding-top: 10px;
+        font-size: 11px;
+        text-align: center;
+    }
+    .form {
+        display: none;
+    }
+    .form-desk {
+        display: grid;
+        height: 65vh;
+        width: 100vw;
+        grid-template-columns: auto auto;
+    }
+    .title-form {
+        grid-column: 1;
+        margin-top: 90px;
+    }
+    .sendform {
+        position: absolute;
+        width: 500px;
+        margin-left: -150px;
+        margin-top: 60px;
+        grid-column: 2;
+    }
+    .text-form {
+        grid-column: 1;
+        margin-bottom: 320px;
+    }
+    .btn-submit {
+        position: absolute;
+        margin-top: 280px;
+        margin-left: -180px;
+    }
+    .input {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width:1020px) {
+    .form-desk {
+        height: 70vh;
     }
 }
 
@@ -946,10 +1044,100 @@ html {
     .input {
         width: 1200px;
     }
+    .button_cadastra-desk {
+        margin-left: 820px;
+    }
+    .input {
+        width: 300px;
+    }
+    .titulo-desk {
+        margin-left: 630px;
+    }
+    .metragem-desk {
+        margin-left: 680px;
+    }
+    .suites-desk {
+        margin-left: 630px;
+    }
+    .vagas-desk {
+        margin-left: 670px;
+    }
 }
 
-.form-desk {
-    display: none;
+@media screen and (min-width:1350px) {
+    .button_cadastra-desk {
+        margin-left: 870px;
+    }
+}
+
+@media screen and (min-width:1360px) {
+    .button_cadastra-desk {
+        margin-left: 850px;
+    }
+    .titulo-desk {
+        padding-top: 25px;
+        margin-left: 600px;
+    }
+    .metragem-desk {
+        margin-left: 650px;
+    }
+    .suites-desk {
+        margin-left: 600px;
+    }
+    .vagas-desk {
+        margin-left: 640px;
+    }
+    .local_icon-desk {
+        margin-left: 660px;
+    }
+    .form {
+        display: none;
+    }
+    .form-desk {
+        display: grid;
+        height: 65vh;
+        width: 100vw;
+        grid-template-columns: auto auto;
+    }
+    .title-form {
+        grid-column: 1;
+        margin-top: 90px;
+    }
+    .sendform {
+        position: absolute;
+        width: 500px;
+        margin-left: -100px;
+        margin-top: 60px;
+        grid-column: 2;
+    }
+    .text-form {
+        grid-column: 1;
+        margin-bottom: 320px;
+    }
+    .btn-submit {
+        position: absolute;
+        margin-top: 280px;
+        margin-left: -278px;
+    }
+    .input {
+        width: 400px;
+    }
+}
+
+@media screen and (min-height: 758px) {
+    .local-desk {
+        height: 90vh;
+    }
+    .titulo-desk {
+        margin-top: 55px;
+    }
+}
+
+@media screen and (min-height: 600px) {
+    .local-desk {
+        height: 115vh;
+    }
+    .titulo-desk {}
 }
 
 @keyframes mechendo {
@@ -1051,10 +1239,6 @@ html {
     from {
         transform: translateX(-400px);
     }
-}
-
-.footer-desk {
-    display: none;
 }
 
 @media screen and (min-width:1440px) {
@@ -1210,15 +1394,18 @@ html {
     }
 }
 
-@media screen and (min-width:1360px) {
+@media screen and (min-width:1440px) {
     .input {
-        width: 1300px;
+        width: 500px;
     }
 }
 
 @media screen and (min-width:1440px) {
-    .input {
-        width: 500px;
+    .button_cadastra-desk {
+        margin-left: 890px
+    }
+    .local_icon-desk {
+        margin-left: 695px;
     }
 }
 
@@ -1229,11 +1416,56 @@ html {
     .input {
         width: 500px;
     }
+    .button_cadastra-desk {
+        margin-left: 1200px;
+    }
+    .titulo-desk {
+        margin-left: 790px;
+    }
+    .metragem-desk {
+        margin-left: 850px;
+    }
+    .suites-desk {
+        margin-left: 800px;
+    }
+    .vagas-desk {
+        margin-left: 835px;
+    }
+    .local-desk {
+        height: 83vh;
+    }
+    .local_icon-desk {
+        margin-left: 915px;
+    }
 }
 
 @media screen and (min-width:1920px) {
     .rain {
         margin-left: 302px;
+    }
+    .local-desk {
+        height: 85vh;
+    }
+    .button_cadastra-desk {
+        margin-left: 1190px;
+    }
+    .titulo-desk {
+        margin-left: 720px;
+    }
+    .metragem-desk {
+        margin-left: 775px;
+    }
+    .suites-desk {
+        margin-left: 725px;
+    }
+    .vagas-desk {
+        margin-left: 765px;
+    }
+    .local_icon-desk {
+        margin-left: 935px;
+    }
+    .form-desk {
+        height: 50vh;
     }
 }
 
